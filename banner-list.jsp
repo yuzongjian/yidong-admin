@@ -19,13 +19,13 @@
         <div class="x-nav">
             <span class="layui-breadcrumb">
               <a><cite>首页</cite></a>
-              <a><cite>会员管理</cite></a>
+              <a><cite>轮播管理</cite></a>
               <a><cite>轮播列表</cite></a>
             </span>
             <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right"  href="javascript:location.replace(location.href);" title="刷新"><i class="layui-icon" style="line-height:30px">ဂ</i></a>
         </div>
         <div class="x-body">
-            <xblock><button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon">&#xe640;</i>批量删除</button><button class="layui-btn" onclick="banner_add('添加轮播图','banner-add.jsp','600','500')"><i class="layui-icon">&#xe608;</i>添加</button><span class="x-right" style="line-height:40px">共有数据：88 条</span></xblock>
+           <button class="layui-btn" onclick="banner_add('添加轮播图','banner-add.jsp','600','500')"><i class="layui-icon">&#xe608;</i>添加</button><span class="x-right" style="line-height:40px"></span>
             <table class="layui-table">
                 <thead>
                     <tr>
@@ -37,12 +37,6 @@
                         </th>
                         <th>
                             缩略图
-                        </th>
-                        <th>
-                            链接
-                        </th>
-                        <th>
-                            描述
                         </th>
                         <th>
                             显示状态
@@ -61,34 +55,16 @@
                             1
                         </td>
                         <td>
-                            <img  src="./images/logo.png" width="200" alt="">点击图片试试
+                            <img  src="./images/logo.png" width="100" alt="">点击图片试试
+                        </td>
+                       
+                        <td >
+                           已显示
                         </td>
                         <td >
-                            http://www.baidu.com
-                        </td>
-                        <td >
-                            十月活动轮播
-                        </td>
-                        <td class="td-status">
-                            <span class="layui-btn layui-btn-normal layui-btn-mini">
-                                已显示
-                            </span>
-                        </td>
-                        <td class="td-manage">
-                        <center>
-                        <button class="layui-btn"  onclick="banner_stop(this,'10001')" href="javascript:;">
- <i class="layui-icon">&#xe620;更改显示状态	</i>
-</button>
-                   <button class="layui-btn" href="javascript:;" onclick="banner_edit('编辑','banner-edit.html','4','','510')">
-  <i class="layui-icon">&#xe642;编辑	</i>
-</button>
-</button>
-                   <button class="layui-btn layui-btn-danger" href="javascript:;" onclick="banner_del(this,'1')" 
-                            style="text-decoration:none">
-                            <i class="layui-icon">&#xe640;删除	</i>
-
-</button>
-</center>
+<a href="#"  class="layui-btn  layui-btn-mini layui-btn-mini" onclick="return ok();">更改显示状态</a>
+                    <a href="#"  class="layui-btn layui-btn-normal layui-btn-mini">修改</a>
+                    <a href="#"  class="layui-btn layui-btn-danger layui-btn-mini" >删除</a>
                            
                         </td>
                     </tr>
