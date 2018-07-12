@@ -59,29 +59,8 @@
                                 </dd>
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="./welcome.html">
-                                            <cite>品牌管理（待开发）</cite>
-                                        </a>
-                                    </dd>
-                                </dd>
-                                <dd class="">
-                                    <dd class="">
-                                        <a href="javascript:;" _href="./welcome.html">
-                                            <cite>类型管理（待开发）</cite>
-                                        </a>
-                                    </dd>
-                                </dd>
-                                <dd class="">
-                                    <dd class="">
-                                        <a href="javascript:;" _href="./welcome.html">
-                                            <cite>类型属性（待开发）</cite>
-                                        </a>
-                                    </dd>
-                                </dd>
-                                <dd class="">
-                                    <dd class="">
-                                        <a href="javascript:;" _href="./category.html">
-                                            <cite>产品分类</cite>
+                                        <a href="javascript:;" _href="./products-add.html">
+                                            <cite>添加商品</cite>
                                         </a>
                                     </dd>
                                 </dd>
@@ -108,8 +87,8 @@
                             <dl class="layui-nav-child">
                                 <dd class="">
                                     <dd class="">
-                                        <a href="javascript:;" _href="./welcome.html">
-                                            <cite>订单列表（待开发）</cite>
+                                        <a href="javascript:;" _href="./Orderform.html">
+                                            <cite>订单列表</cite>
                                         </a>
                                     </dd>
                                 </dd>
@@ -123,23 +102,6 @@
                                 <dd class="">
                                     <a href="javascript:;" _href="./category.html">
                                         <cite>分类列表</cite>
-                                    </a>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li class="layui-nav-item">
-                            <a class="javascript:;" href="javascript:;">
-                                <i class="layui-icon" style="top: 3px;">&#xe606;</i><cite>评论管理</cite>
-                            </a>
-                            <dl class="layui-nav-child">
-                                <dd class="">
-                                    <a href="javascript:;" _href="./comment-list.html">
-                                        <cite>评论列表</cite>
-                                    </a>
-                                </dd>
-                                <dd class="">
-                                    <a href="javascript:;" _href="./feedback-list.html">
-                                        <cite>意见反馈</cite>
                                     </a>
                                 </dd>
                             </dl>
@@ -176,50 +138,11 @@
                             </a>
                             <dl class="layui-nav-child">
                                 <dd class="">
-                                    <a href="javascript:;" _href="./echarts1.html">
-                                        <cite>拆线图</cite>
-                                    </a>
-                                </dd>
-                                <dd class="">
                                     <a href="javascript:;" _href="./echarts2.html">
                                         <cite>柱状图</cite>
                                     </a>
                                 </dd>
-                                <dd class="">
-                                    <a href="javascript:;" _href="./echarts3.html">
-                                        <cite>地图</cite>
-                                    </a>
-                                </dd>
-                                <dd class="">
-                                    <a href="javascript:;" _href="./echarts4.html">
-                                        <cite>饼图</cite>
-                                    </a>
-                                </dd>
-                                <dd class="">
-                                    <a href="javascript:;" _href="./echarts5.html">
-                                        <cite>雷达图</cite>
-                                    </a>
-                                </dd>
-                                <dd class="">
-                                    <a href="javascript:;" _href="./echarts6.html">
-                                        <cite>k线图</cite>
-                                    </a>
-                                </dd>
-                                <dd class="">
-                                    <a href="javascript:;" _href="./echarts7.html">
-                                        <cite>热力图</cite>
-                                    </a>
-                                </dd>
-                                <dd class="">
-                                    <a href="javascript:;" _href="./echarts8.html">
-                                        <cite>仪表图</cite>
-                                    </a>
-                                </dd>
-                                <dd class="">
-                                    <a href="http://echarts.baidu.com/examples.html" target="_blank" _href="./welcome.html">
-                                        <cite>更多案例</cite>
-                                    </a>
-                                </dd>
+                               
                             </dl>
                         </li>
 

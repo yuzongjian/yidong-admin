@@ -23,20 +23,28 @@
             <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right"  href="javascript:location.replace(location.href);" title="刷新"><i class="layui-icon" style="line-height:30px">ဂ</i></a>
         </div>
         <div class="x-body">
-            <form class="layui-form " action="" style="width:500px">
-                <div class="layui-form-pane" style="margin-top: 15px;">
-                  <div class="layui-form-item">
-                    <label class="layui-form-label">用户名</label>
-	                    <div class="layui-input-inline">
-	                      <input type="text" name="username"  placeholder="请输入用户名" autocomplete="off" class="layui-input">
-                    </div>
-                    <div class="layui-input-inline" style="width:80px">
-                        <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
-                    </div>                  
-                  </div>
-                </div> 
-            </form>
-            <xblock><button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon">&#xe640;</i>批量删除</button><button class="layui-btn" onclick="member_add('添加用户','member-add.html','600','500')"><i class="layui-icon">&#xe608;</i>添加</button><span class="x-right" style="line-height:40px">共有数据：88 条</span></xblock>
+           <form class="layui-form" action="${pageContext.request.contextPath}/adminSelectAll.do" method="post">
+				<label class="layui-form-label">手机号：</label>	
+<div class="layui-input-inline">
+ <input type="text" class="layui-input" placeholder="请输入手机号" autocomplete="off" name="title" >
+     </div>
+         <div class="layui-inline">
+      <label class="layui-form-label">用户名：</label>
+      <div class="layui-input-inline">
+<input type="text" class="layui-input" placeholder="请输入用户名" autocomplete="off" name="title" >
+      </div>
+    </div>
+    <div class="layui-inline">
+						<button class="layui-btn layui-btn-normal layui-btn-small" layui-submit>
+							<i class="layui-icon">&#xe615;</i> 查询
+						</button>
+						<button class="layui-btn layui-btn-normal layui-btn-small" type="reset">
+							<i class="layui-icon">&#x1002;</i>重置条件
+						</button>
+						
+					</div>
+	</form>
+            <xblock><button class="layui-btn" onclick="member_add('添加用户','member-add.html','600','500')"><i class="layui-icon">&#xe608;</i>添加</button><span class="x-right" style="line-height:40px"></span></xblock>
             <table class="layui-table">  
                 <thead>
                     <tr>
@@ -44,31 +52,20 @@
                             <input type="checkbox" name="" value="">
                         </th>
                         <th>
-                            ID
+                           用户编号
                         </th>
                         <th>
-                            用户名
+                         用户名
                         </th>
                         <th>
-                            性别
+                          用户电话
                         </th>
                         <th>
-                            手机
+                            收货地址
                         </th>
-                        <th>
-                            邮箱
-                        </th>
-                        <th>
-                            地址
-                        </th>
-                        <th>
-                            加入时间
-                        </th>
-                        <th>
-                            状态
-                        </th>
-                        <th>
-                            操作
+                       
+                         <th>
+                      操作
                         </th>
                     </tr>
                 </thead>
@@ -81,52 +78,30 @@
                             1
                         </td>
                         <td>
-                            <u style="cursor:pointer" onclick="member_show('张三','member-show.html','10001','360','400')">
+                        
                                 小明
+                 
+                        </td>
+                        <td >
+                           15536728263
+                        </td>                   
+                        <td >
+                         
+                                  <u style="cursor:pointer" onclick="member_show('小明','member-show.html','10001','360','400')">
+                                其中一个地址（点击显示更多）
                             </u>
                         </td>
                         <td >
-                            男
-                        </td>
-                        <td >
-                            13000000000
-                        </td>
-                        <td >
-                            admin@mail.com
-                        </td>
-                        <td >
-                            北京市 海淀区
-                        </td>
-                        <td>
-                            2017-01-01 11:11:42
-                        </td>
-                        <td class="td-status">
-                            <span class="layui-btn layui-btn-normal layui-btn-mini">
-                                已启用
-                            </span>
-                        </td>
-                        <td class="td-manage">
-                            <a style="text-decoration:none" onclick="member_stop(this,'10001')" href="javascript:;" title="停用">
-                                <i class="layui-icon">&#xe601;</i>
-                            </a>
-                            <a title="编辑" href="javascript:;" onclick="member_edit('编辑','member-edit.html','4','','510')"
-                            class="ml-5" style="text-decoration:none">
-                                <i class="layui-icon">&#xe642;</i>
-                            </a>
-                            <a style="text-decoration:none"  onclick="member_password('修改密码','member-password.html','10001','600','400')"
-                            href="javascript:;" title="修改密码">
-                                <i class="layui-icon">&#xe631;</i>
-                            </a>
-                            <a title="删除" href="javascript:;" onclick="member_del(this,'1')" 
-                            style="text-decoration:none">
-                                <i class="layui-icon">&#xe640;</i>
-                            </a>
+                    <a href="#"  class="layui-btn layui-btn-normal layui-btn-mini">修改</a>
+                    <a href="#"  class="layui-btn layui-btn-danger layui-btn-mini" >删除</a>
+                           
                         </td>
                     </tr>
                 </tbody>
             </table>
-
+<center>
             <div id="page"></div>
+            </center>
         </div>
         <script src="./lib/layui/layui.js" charset="utf-8"></script>
         <script src="./js/x-layui.js" charset="utf-8"></script>
@@ -155,8 +130,7 @@
                   end.min = datas; //开始日选好后，重置结束日的最小日期
                   end.start = datas //将结束日的初始值设定为开始日
                 }
-              };
-              
+              };              
               var end = {
                 min: laydate.now()
                 ,max: '2099-06-16 23:59:59'

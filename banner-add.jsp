@@ -80,8 +80,6 @@
                 $ = layui.jquery;
               var form = layui.form()
               ,layer = layui.layer;
-
-
               //图片上传接口
               layui.upload({
                 url: './upload.json' //上传接口
@@ -91,7 +89,6 @@
                 }
               });
             
-
               //监听提交
               form.on('submit(add)', function(data){
                 console.log(data);

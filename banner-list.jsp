@@ -30,9 +30,6 @@
                 <thead>
                     <tr>
                         <th>
-                            <input type="checkbox" name="" value="">
-                        </th>
-                        <th>
                             ID
                         </th>
                         <th>
@@ -48,9 +45,6 @@
                 </thead>
                 <tbody id="x-img">
                     <tr>
-                        <td>
-                            <input type="checkbox" value="1" name="">
-                        </td>
                         <td>
                             1
                         </td>
